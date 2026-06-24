@@ -1765,7 +1765,7 @@ Leo: Nós somos amigos porque estamos na mesma aula de história.
 Leo: Oi, Beatriz! Esta é minha mãe.
 Beatriz: Olá, Sra. Clara. É um prazer conhecê-la.
 Clara: É um prazer conhecê-la também, Beatriz. Você está aqui com sua mãe?
-Beatriz: Não, não estou. Estou aqui com meu pai. Ele está ali procurando tomates frescos.`}
+Beatriz: Não, não estou. Estou aqui com meu pai. Ele está ali procurando tomates frescos.`},
     "takeaways": []
   }
 ];
