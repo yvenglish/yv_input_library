@@ -1592,5 +1592,180 @@ Tchau!
       "The speaker uses examples and personal experience.",
       "Fluency and organization both matter."
     ]
+  },
+    {
+    "id": "greetings-introductions",
+    "level": "easy-peasy",
+    "title": "Greetings and Introductions",
+    "source": "Alejandra Romano · YouTube",
+    "estimatedTime": "3 min",
+    "type": "Video",
+    "tags": [
+      "Greetings",
+      "Introductions",
+      "Names",
+      "Starter English"
+    ],
+    "embed": "<iframe class=\"video-frame\" src=\"https://www.youtube.com/embed/zHtDMwPkhgc\" title=\"Greetings and Introductions\" frameborder=\"0\" allowfullscreen></iframe>",
+    "audioFile": "",
+    "vocabulary": [
+      {
+        "term": "Hi",
+        "meaning": "Oi"
+      },
+      {
+        "term": "Hello",
+        "meaning": "Olá"
+      },
+      {
+        "term": "Nice to meet you",
+        "meaning": "Prazer em conhecer você"
+      },
+      {
+        "term": "Good to meet you",
+        "meaning": "Prazer em conhecer você"
+      },
+      {
+        "term": "What's your name?",
+        "meaning": "Qual é o seu nome?"
+      },
+      {
+        "term": "This is my friend",
+        "meaning": "Este(a) é meu/minha amigo(a)"
+      },
+      {
+        "term": "Boyfriend",
+        "meaning": "Namorado"
+      }
+    ],
+    "summary": {
+      "en": "This video shows short scenes where people greet each other and introduce themselves. The speakers use simple expressions such as “Hi”, “Nice to meet you”, “What’s your name?” and “This is my friend”.",
+      "pt": "Este vídeo mostra cenas curtas em que pessoas se cumprimentam e se apresentam. Os falantes usam expressões simples como “Hi”, “Nice to meet you”, “What’s your name?” e “This is my friend”."
+    },
+    "questions": [
+      {
+        "label": "Qual expressão as pessoas usam para dizer “prazer em conhecer você”?",
+        "name": "question_1"
+      },
+      {
+        "label": "O que significa “What’s your name?”",
+        "name": "question_2"
+      },
+      {
+        "label": "Escreva uma apresentação curta em inglês.",
+        "name": "question_3"
+      }
+    ],
+    "transcript": null,
+    "takeaways": []
+  },
+  {
+    "id": "leo-clara-dialogue",
+    "level": "easy-peasy",
+    "title": "Introducing a Friend",
+    "source": "yv. English",
+    "estimatedTime": "2 min",
+    "type": "Audio + Transcript",
+    "tags": [
+      "Introductions",
+      "Names",
+      "Personal Information"
+    ],
+    "embed": "",
+    "audioFile": "",
+    "vocabulary": [
+      {
+        "term": "What's your name?",
+        "meaning": "Qual é o seu nome?"
+      },
+      {
+        "term": "She is...",
+        "meaning": "Ela é..."
+      },
+      {
+        "term": "Are you...?",
+        "meaning": "Vocês são..."
+      },
+      {
+        "term": "Nice to meet you",
+        "meaning": "Prazer em conhecer você"
+      },
+      {
+        "term": "Where...",
+        "meaning": "Onde/aonde..."
+      },
+      {
+        "term": "I don't know",
+        "meaning": "Eu não sei..."
+      }
+    ],
+    "summary": {
+      "en": "The audio teaches basic introductions. The characters ask and answer names and characteristics.",
+      "pt": "O vídeo ensina apresentações básicas. Os personagens perguntam e respondem nomes e características"
+    },
+    "questions": [
+      {
+        "label": "Como perguntamos “ele é inteligente?” em inglês?",
+        "name": "question_1"
+      },
+      {
+        "label": "O que significa “Where are you going”?",
+        "name": "question_2"
+      },
+      {
+        "label": "Apresente alguém em inglês usando “He is / She is”",
+        "name": "question_3"
+      }
+    ],
+    "transcript": {
+      "en": `Clara: Leo, we are here for the vegetables. Is the shopping list with you?
+
+Leo: Yes, it is. Oh, wait! Look at that girl. Is that Beatriz?
+
+Clara: I don't know. Is she your friend from school?
+
+Leo: Yes, she is.
+
+(Leo começa a andar)
+
+Clara: Leo! Where are you going? Wait for me! Tell me first: is she smart?
+
+Leo: Yes, she is smart.
+
+Clara: And is she friendly?
+
+Leo: Yes, she is friendly. Can we go now?
+
+Clara: Are you good friends?
+
+Leo: We are friends because we are in the same history class.
+
+(Eles se aproximam de Beatriz)
+
+Leo: Hi, Beatriz! This is my mom.
+
+Beatriz: Hello, Mrs. Clara. It is nice to meet you.
+
+Clara: It is nice to meet you too, Beatriz. Are you here with your mom?
+
+Beatriz: No, I'm not. I'm here with my father. He is there looking for fresh tomatoes.`,
+      
+      "pt": `Clara: Leo, nós estamos aqui para (pegar) os vegetais. A lista de compras está com você?
+Leo: Sim, está. Ah, espere! Olhe aquela menina. Aquela é a Beatriz?
+Clara: Eu não sei. Ela é sua amiga da escola?
+Leo: Sim, ela é.
+(Leo começa a andar)
+Clara: Leo! Onde você vai? Espere por mim! Me diga primeiro: ela é inteligente?
+Leo: Sim, ela é inteligente.
+Clara: E ela é amigável?
+Leo: Sim, ela é amigável. Podemos ir agora?
+Clara: Vocês são bons amigos?
+Leo: Nós somos amigos porque estamos na mesma aula de história.
+(Eles se aproximam de Beatriz)
+Leo: Oi, Beatriz! Esta é minha mãe.
+Beatriz: Olá, Sra. Clara. É um prazer conhecê-la.
+Clara: É um prazer conhecê-la também, Beatriz. Você está aqui com sua mãe?
+Beatriz: Não, não estou. Estou aqui com meu pai. Ele está ali procurando tomates frescos.`}
+    "takeaways": []
   }
 ];
