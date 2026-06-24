@@ -1,4 +1,4 @@
-const PASSWORD_VERSION='v5';
+const PASSWORD_VERSION='v4';
 const USERS={'paulo-0507':{name:'Paulo',plan:'foundation'},'pamela-0204':{name:'Pamela',plan:'fluency'},'adjalma-0205':{name:'Adjalma',plan:'fluency'},'evellyn-0508':{name:'Evellyn',plan:'foundation'},'cristiani01':{name:'Cristiani',plan:'foundation'},'314724':{name:'Yasmin',plan:'master'}};
 const LEVELS={'easy-peasy':{title:'Easy Peasy',description:'First contact with English. Short sentences and essential vocabulary.'},'easy':{title:'Easy',description:'Real conversations in simple English.'},'medium':{title:'Medium',description:'Longer discussions and practical ideas.'},'hard':{title:'Hard',description:'TED Talks, IELTS and advanced listening.'}};
 const EPISODES=[
