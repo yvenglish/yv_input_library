@@ -1663,7 +1663,7 @@ Tchau!
     "id": "leo-clara-dialogue",
     "level": "easy-peasy",
     "title": "Introducing a Friend",
-    "source": "yv. English",
+    "source": "YV English",
     "estimatedTime": "2 min",
     "type": "Audio + Transcript",
     "tags": [
@@ -1740,7 +1740,7 @@ Clara: Are you good friends?
 
 Leo: We are friends because we are in the same history class.
 
-(Eles se aproximam de Beatriz)
+(They walk towards Beatriz)
 
 Leo: Hi, Beatriz! This is my mom.
 
@@ -1751,20 +1751,35 @@ Clara: It is nice to meet you too, Beatriz. Are you here with your mom?
 Beatriz: No, I'm not. I'm here with my father. He is there looking for fresh tomatoes.`,
       
       "pt": `Clara: Leo, nós estamos aqui para (pegar) os vegetais. A lista de compras está com você?
+      
 Leo: Sim, está. Ah, espere! Olhe aquela menina. Aquela é a Beatriz?
+
 Clara: Eu não sei. Ela é sua amiga da escola?
+
 Leo: Sim, ela é.
+
 (Leo começa a andar)
+
 Clara: Leo! Onde você vai? Espere por mim! Me diga primeiro: ela é inteligente?
+
 Leo: Sim, ela é inteligente.
+
 Clara: E ela é amigável?
+
 Leo: Sim, ela é amigável. Podemos ir agora?
+
 Clara: Vocês são bons amigos?
+
 Leo: Nós somos amigos porque estamos na mesma aula de história.
+
 (Eles se aproximam de Beatriz)
+
 Leo: Oi, Beatriz! Esta é minha mãe.
+
 Beatriz: Olá, Sra. Clara. É um prazer conhecê-la.
+
 Clara: É um prazer conhecê-la também, Beatriz. Você está aqui com sua mãe?
+
 Beatriz: Não, não estou. Estou aqui com meu pai. Ele está ali procurando tomates frescos.`},
     "takeaways": []
   }
