@@ -1672,11 +1672,11 @@ Tchau!
       "Personal Information"
     ],
     "embed": "",
-    "audioFile": "",
+    "audioFile": "clara_leo_to_be.mp4",
     "vocabulary": [
       {
-        "term": "What's your name?",
-        "meaning": "Qual é o seu nome?"
+        "term": "same",
+        "meaning": "mesmo/mesma"
       },
       {
         "term": "She is...",
