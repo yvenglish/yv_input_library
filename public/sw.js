@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yv-input-v2';
+const CACHE_NAME = 'yv-input-v3';
 const ASSETS = [
   '/',
   '/index.html',
