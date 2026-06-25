@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YV Input Library</title>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#121212"/>
+  <link rel="apple-touch-icon" href="/logo.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <button id="floatingTopBtn" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+  <section id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <img src="logo.png" alt="YV English Logo" class="login-logo"/>
+      <p class="eyebrow">YV English • Language Academy & Method</p>
+      <h1>YV Input Library</h1>
+      <h2>Listening Practice <span>& Real English</span></h2>
+      <p class="login-text">Build your listening skills through real conversations, podcasts, interviews, TED Talks and authentic English content.</p>
+      <input type="password" id="passwordInput" placeholder="Digite sua senha" onkeydown="if(event.key === 'Enter') login()"/>
+      <button onclick="login()" class="login-button">Entrar</button>
+      <p id="loginError" class="login-error"></p>
+    </div>
+  </section>
+  <main id="app" class="page" style="display:none;">
+    <header class="hero" id="top">
+      <div class="top-bar">
+        <img src="logo.png" alt="YV English Logo" class="brand-seal"/>
+        <div class="student-area">
+          <button id="adminBtn" onclick="showAdmin()" class="logout-btn" style="display:none; background:var(--orange);">Admin</button>
+          <button id="themeToggleBtn" onclick="toggleTheme()" class="theme-btn" aria-label="Toggle Theme">☀️</button>
+          <span id="welcomeText">Welcome.</span>
+          <button onclick="logout()" class="logout-btn">Sair</button>
+        </div>
+      </div>
+      <p class="eyebrow">YV English • Language Academy & Method</p>
+      <h1>YV Input Library</h1>
+      <h2>Listening Practice <span>& Real English</span></h2>
+      <p class="hero-description">Build your listening skills through real conversations, podcasts, interviews, TED Talks and authentic English content.</p>
+      <div class="hero-signature">Understand. Apply. Review.</div>
+    </header>
+    <section id="libraryView">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Search content..." oninput="renderLibrary(currentLevel)"/>
+      </div>
+      <div class="level-tabs">
+        <button class="level-tab active" onclick="filterLevel('all', this)">All</button>
+        <button class="level-tab" onclick="filterLevel('favorites', this)">Favorites ❤️</button>
+        <button class="level-tab" onclick="filterLevel('grammar', this)">Grammar Lab 🧪</button>
+        <button class="level-tab" onclick="filterLevel('easy-peasy', this)">Easy Peasy</button>
+        <button class="level-tab" onclick="filterLevel('easy', this)">Easy</button>
+        <button class="level-tab" onclick="filterLevel('medium', this)">Medium</button>
+        <button class="level-tab" onclick="filterLevel('hard', this)">Hard</button>
+      </div>
+      <section id="episodesContainer"></section>
+    </section>
+    <section id="episodeView" style="display:none;">
+      <div id="episodeContent"></div>
+    </section>
+    <section id="adminView" style="display:none;">
+      <div class="content-header">
+        <button onclick="backToLibraryFromAdmin()" class="back-btn">← Back to Library</button>
+        <h2>Admin Dashboard</h2>
+      </div>
+      <div class="dark-card">
+        <p class="section-kicker">Add New Student</p>
+        <form id="addStudentForm" onsubmit="addStudent(event)" style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <input type="text" id="newStudentName" placeholder="Name" required style="padding:10px; border-radius:8px;"/>
+          <select id="newStudentPlan" required style="padding:10px; border-radius:8px;">
+            <option value="foundation">Foundation</option>
+            <option value="fluency">Fluency</option>
+            <option value="performance">Performance</option>
+          </select>
+          <input type="text" id="newStudentPassword" placeholder="Password (ex: paulo-0507)" required style="padding:10px; border-radius:8px;"/>
+          <button type="submit" class="toggle-btn" style="margin:0;">Add Student</button>
+        </form>
+        <p id="adminFeedback" class="note"></p>
+      </div>
+      <div class="dark-card" style="margin-top:20px;">
+        <p class="section-kicker">Students List</p>
+        <div id="adminStudentsList" style="overflow-x:auto;"></div>
+      </div>
+    </section>
+    <div id="editStudentModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
+      <div class="dark-card" style="width:90%; max-width:400px; padding:20px;">
+        <h2 style="margin-top:0;">Edit Student</h2>
+        <form id="editStudentForm" onsubmit="saveStudentEdit(event)" style="display:flex; flex-direction:column; gap:15px;">
+          <input type="hidden" id="editOldId"/>
+          <label>Name: <input type="text" id="editStudentName" required style="width:100%; padding:10px; border-radius:8px;"/></label>
+          <label>Plan: 
+            <select id="editStudentPlan" required style="width:100%; padding:10px; border-radius:8px;">
+              <option value="foundation">Foundation</option>
+              <option value="fluency">Fluency</option>
+              <option value="performance">Performance</option>
+              <option value="master">Master</option>
+            </select>
+          </label>
+          <label>Password (ID): <input type="text" id="editStudentPassword" required style="width:100%; padding:10px; border-radius:8px;"/></label>
+          <label>Status: 
+            <select id="editStudentStatus" required style="width:100%; padding:10px; border-radius:8px;">
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </label>
+          <div style="display:flex; gap:10px; margin-top:10px;">
+            <button type="submit" class="toggle-btn" style="flex:1;">Save</button>
+            <button type="button" onclick="closeEditModal()" class="back-btn" style="flex:1;">Cancel</button>
+          </div>
+        </form>
+        <p id="editFeedback" class="note"></p>
+      </div>
+    </div>
+  </main>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
