@@ -12,15 +12,33 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Create connection pool
-const dbConfig = process.env.DATABASE_URL || {
-  host: process.env.DB_HOST || '127.0.0.1',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'yv_input_library',
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
-};
+const isProduction = process.env.NODE_ENV === 'production' || process.env.RENDER;
+
+let dbConfig;
+if (process.env.DATABASE_URL) {
+  dbConfig = {
+    uri: process.env.DATABASE_URL,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+  };
+} else {
+  dbConfig = {
+    host: process.env.DB_HOST || '127.0.0.1',
+    port: process.env.DB_PORT || 3306,
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '',
+    database: process.env.DB_NAME || 'yv_input_library',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+  };
+}
+
+// Add SSL for Aiven/Production clouds
+if (process.env.DB_HOST && process.env.DB_HOST.includes('aivencloud') || process.env.DATABASE_URL) {
+  dbConfig.ssl = { rejectUnauthorized: false };
+}
 
 const pool = mysql.createPool(dbConfig);
 
